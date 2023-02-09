@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">tns</string>
+
+    <string-array name="boxarMärke">
+        <item>välj märke</item>
+        <item>CTEK</item>
+        <item>GARO</item>
+        <item>CHARGE</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

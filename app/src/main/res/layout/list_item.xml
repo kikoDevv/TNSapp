@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="392dp"
+        android:layout_height="145dp"
+        app:cardBackgroundColor="#9E795D"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/IDimageView"
+                android:layout_width="144dp"
+                android:layout_height="144dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/IDspinner"
+                app:srcCompat="@drawable/transtema" />
+
+            <EditText
+                android:id="@+id/IDtextView2"
+                android:layout_width="237dp"
+                android:layout_height="49dp"
+                android:ems="10"
+                android:hint="garag nummer"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/IDtextView" />
+
+            <EditText
+                android:id="@+id/IDtextView"
+                android:layout_width="234dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="adress här"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextNumberDecimal"
+                android:layout_width="239dp"
+                android:layout_height="49dp"
+                android:ems="10"
+                android:hint="ladbox serie nr"
+                android:inputType="numberDecimal"
+                android:textColor="#FAFAFA"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/IDtextView2" />
+
+            <Spinner
+                android:id="@+id/IDspinner"
+                android:layout_width="138dp"
+                android:layout_height="42dp"
+                android:entries="@array/boxarMärke"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
